@@ -14,9 +14,9 @@ test:
 
 production:
   adapter: mysql
-  database: benchmark
-  host: database
-  username: benchmarks
-  password: benchmarks
+  database: spree_benchmark
+  host: localhost
+  username: root
+  password: 
   encoding: utf8
   pool: 100

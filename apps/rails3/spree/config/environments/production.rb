@@ -25,7 +25,7 @@ Spree::Application.configure do
   # config.logger = SyslogLogger.new
 
   # Use a different cache store in production
-  # config.cache_store = :mem_cache_store
+  config.cache_store = :torque_box_store
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
@@ -38,7 +38,7 @@ Spree::Application.configure do
   # config.action_mailer.raise_delivery_errors = false
 
   # Enable threaded mode
-  # config.threadsafe!
+  config.threadsafe!
 
   # Like config.threadsafe! but leave dependency loading enabled
   # since JRuby makes require threadsafe and redmine wasn't written
